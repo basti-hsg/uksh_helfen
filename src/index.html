@@ -7,101 +7,13 @@
   </head>
 
   <!-- BODY -->
-  <body class="antialiasing text-grey-900 mx-auto font-sans bg-black">
+  <body class="text-grey-900 mx-auto font-sans bg-grey">
     <!-- HEADER -->
-    <header>
-      <!-- PRE-HEADER -->
-      <div
-        class="bg-blue-800 text-white flex justify-between py-2 px-3 md:px-6 text-xs sm:text-sm"
-      >
-        <span class="pr-3 hidden sm:inline-block"
-          ><i class="fas fa-map-marker"></i> Westring 343, 24118 Kiel</span
-        >
-        <span class="md:pr-3"
-          ><i class="fas fa-phone-volume"></i> 0800 664692 (kostenfrei)</span
-        >
-        <span class="md:pr-3"
-          ><i class="fas fa-envelope"></i> info@mare-sicherheit.de</span
-        >
-        <span class="pr-3 hidden xl:inline-block"
-          ><i class="fas fa-info-circle"></i> Service-Rufnummer: 24/7</span
-        >
-        <span class="hidden sm:inline-block"
-          ><a href="https://www.facebook.com/MARESicherheit/"
-            ><i class="fab fa-facebook"></i> Facebook</a
-          ></span
-        >
-      </div>
 
-      <!-- MAIN-HEADER -->
-      <nav
-        x-data="{ open: false }"
-        class="flex items-center justify-between flex-wrap bg-white p-3 md:p-6"
-      >
-        <div class="flex items-center flex-shrink-0 mr-10">
-          <span class="font-semibold text-xl tracking-tight w-24 md:w-40">
-            <img src="images/MARE_Logo.svg" alt="Mare Sicherheit" />
-          </span>
-        </div>
-        <div class="block lg:hidden">
-          <button
-            class="flex items-center px-3 py-2 border rounded text-blue-800 border-blue-400 hover:text-grey-800 hover:border-black"
-            @click="open = true"
-          >
-            <svg
-              class="fill-current h-3 w-3"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
-        </div>
-        <div
-          class="w-full block flex-grow lg:flex lg:items-center lg:w-auto origin-top"
-          x-show.transition="open"
-          @click.away="open = false"
-        >
-          <div class="lg:flex-grow">
-            <a
-              href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 text-blue-800 hover:text-blue-700 mr-6"
-            >
-              Startseite
-            </a>
-            <a
-              href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 text-blue-800 hover:text-blue-700 mr-6"
-            >
-              Unser Unternehmen
-            </a>
-            <a
-              href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 text-blue-800 hover:text-blue-700 mr-6"
-            >
-              Unsere Leistungen
-            </a>
-            <a
-              href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 text-blue-800 hover:text-blue-700 mr-6"
-            >
-              Ausbildung/Jobs
-            </a>
-            <a
-              href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 text-blue-800 hover:text-blue-700"
-            >
-              Kontakt
-            </a>
-          </div>
-        </div>
-      </nav>
-    </header>
-
+    <header>HEADER</header>
     <!-- CONTENT  -->
     <main>
-      <h1 class="text-white">Hello World</h1>
+      <h1>Hello World</h1>
     </main>
 
     <script src="./index.js"></script>
