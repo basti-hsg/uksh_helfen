@@ -108,7 +108,11 @@
       <!-- FORM  -->
       <div class="container mx-auto lg:flex pb-5">
         <a class="anchor" id="form-anchor"></a>
-        <div class="shadow-xl bg-white pt-20 lg:pt-10 lg:mt-10 p-10 lg:mr-10">
+        <form
+          action="https://app.99inbound.com/api/e/sKNCVAig"
+          method="POST"
+          class="shadow-xl bg-white pt-20 lg:pt-10 lg:mt-10 p-10 lg:mr-10"
+        >
           <h2 class="text-4xl font-black mb-4">Sign Up Today</h2>
           <p class="leading-normal text-2xl mb-8">
             Sub-hero message, not too long and not too short. Make it just
@@ -119,6 +123,7 @@
               class="input border border-gray-400 appearance-none rounded w-full px-3 py-3 pt-5 pb-2 focus focus:border-indigo-600 focus:outline-none active:outline-none active:border-indigo-600"
               id="name-input"
               type="text"
+              name="name"
             />
             <label
               for="password"
@@ -130,7 +135,8 @@
             <input
               class="input border border-gray-400 appearance-none rounded w-full px-3 py-3 pt-5 pb-2 focus focus:border-indigo-600 focus:outline-none active:outline-none active:border-indigo-600"
               id="email"
-              type="text"
+              type="email"
+              name="email"
             />
             <label
               for="email"
@@ -144,7 +150,7 @@
           >
             Submit
           </button>
-        </div>
+        </form>
 
         <!-- Supporting Text next to Form -->
         <div class="pt-20 p-10 text-center">

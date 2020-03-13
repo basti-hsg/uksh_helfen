@@ -13,3 +13,15 @@ subscribe_cta_elements.forEach(function(element) {
     }, 0);
   });
 });
+
+// keep labels up after text is entered in input
+const form_text_input_elements = document.querySelectorAll("form input");
+form_text_input_elements.forEach(function(input, index) {
+  input.addEventListener("focusout", function() {
+    if (input.value) {
+      input.classList.add("filled");
+    } else {
+      input.classList.remove("filled");
+    }
+  });
+});

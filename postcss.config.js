@@ -10,9 +10,9 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
 module.exports = {
   plugins: [
     require("tailwindcss"),
-    require("autoprefixer"),
+    require("autoprefixer")
     // remove this on developemnt
-    purgecss
+    // purgecss
     // ...(process.env.NODE_ENV === "production" ? [purgecss] : [])
   ]
 };
