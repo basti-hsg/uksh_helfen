@@ -239,14 +239,16 @@ section.cards {
     justify-content: space-around;
   }
 
-  background-image: linear-gradient(
-    180deg,
-    white 0%,
-    white 45%,
-    #e4e4e4 45%,
-    #e4e4e4 75%,
-    white 75%
-  );
+  @media (min-width: $bp-medium) {
+    background-image: linear-gradient(
+      180deg,
+      white 0%,
+      white 45%,
+      #e4e4e4 45%,
+      #e4e4e4 75%,
+      white 75%
+    );
+  }
 
   .card {
     margin-left: auto;
