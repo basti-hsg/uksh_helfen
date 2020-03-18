@@ -236,6 +236,7 @@ section.hero-headline {
 
 section.cards {
   .flex-container {
+    margin-bottom: $spacing-large;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -443,12 +444,44 @@ section.cards {
         border-radius: 40px;
       }
       .info-text-bottom {
-        bottom: -24%;
+        bottom: -16%;
         left: 24px;
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 24px;
         right: 24px;
       }
+    }
+  }
+}
+
+section.info-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: $spacing-large;
+  .img-wrapper {
+    max-width: 240px;
+    margin-top: $spacing-large;
+    margin-bottom: $spacing-medium;
+    img {
+      padding-right: $spacing-medium;
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media (min-width: $bp-medium) {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+
+    article {
+      flex-basis: 66%;
+      column-count: 2;
+    }
+    .img-wrapper {
+      flex-basis: 33%;
+      margin-top: 0;
     }
   }
 }
