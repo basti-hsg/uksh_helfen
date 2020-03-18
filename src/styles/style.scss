@@ -16,6 +16,13 @@ $spacing-x-large: 64px;
 $spacing-large: 48px;
 $spacing-medium: 20px;
 
+// Breakpoints
+
+$bp-x-large: 1280px;
+$bp-large: 1024px;
+$bp-medium: 768px;
+$bp-small: 640px;
+
 .bg-primary-gradient {
   background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
 }
@@ -89,10 +96,17 @@ div.fancy-hr {
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
+.btn-wrapper {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
 .btn-secondary {
   color: $gray-800;
   background-color: white;
-
+  border: 1px solid white;
   &:hover {
     text-decoration: underline;
   }
@@ -101,6 +115,7 @@ div.fancy-hr {
 .btn-primary {
   color: white;
   background-color: $color-primary;
+  border: 1px solid $color-primary;
 }
 
 // Reset
@@ -157,6 +172,25 @@ a.anchor {
   }
 }
 
+/*
+flex-container
+*/
+.flex-container {
+  @media (min-width: $bp-medium) {
+    display: flex;
+  }
+}
+
+.flex-container-large {
+  @media (min-width: $bp-large) {
+    display: flex;
+  }
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
 // Header
 
 header {
@@ -169,6 +203,10 @@ header {
     line-height: 36px;
     margin-bottom: 8px;
     margin-top: 8px;
+    @media (min-width: $bp-large) {
+      font-size: 36px;
+      line-height: 54px;
+    }
   }
   border-bottom: 2px solid rgba(white, 0.3);
 }
@@ -181,15 +219,29 @@ section.hero {
   padding-top: $spacing-xx-large;
   text-align: center;
   color: white;
+  @media (min-width: $bp-medium) {
+    text-align: left;
+  }
+
+  .flex-item:nth-child(1) {
+    @media (min-width: $bp-medium) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .btn-wrapper {
+    @media (min-width: $bp-large) {
+      justify-content: flex-start;
+    }
+  }
 
   h1 {
     margin-bottom: $spacing-medium;
   }
   p:nth-child(3) {
     margin-bottom: 48px;
-  }
-  .btn {
-    margin-bottom: 30px;
   }
 
   .img-wrapper {
@@ -198,6 +250,9 @@ section.hero {
     img {
       width: 100%;
       height: auto;
+      @media (min-width: $bp-large) {
+        width: 80%;
+      }
     }
   }
 }
@@ -234,6 +289,9 @@ section.form-n-info {
       border: 1px solid $gray-400;
       line-height: 24px;
       margin-bottom: 16px;
+      @media (min-width: $bp-medium) {
+        width: 100%;
+      }
     }
 
     .input:focus + .label,
@@ -271,6 +329,10 @@ section.form-n-info {
   div.details {
     text-align: center;
     padding: 24px;
+
+    @media (min-width: $bp-medium) {
+      padding: $spacing-large;
+    }
   }
 }
 
@@ -280,15 +342,33 @@ section.social-media {
 
   margin-bottom: $spacing-large;
 
+  .flex-container {
+    align-items: center;
+  }
+
   div.img-wrapper {
     width: 100%;
     padding: 24px 64px;
+
     img {
       background-color: white;
       padding: 10px;
       border-radius: 50%;
       max-width: 100%;
       height: auto;
+    }
+
+    @media (min-width: $bp-medium) {
+      padding: 24px;
+      img {
+        padding: 5px;
+      }
+    }
+
+    @media (min-width: $bp-large) {
+      img {
+        width: 80%;
+      }
     }
   }
 
@@ -317,6 +397,16 @@ section.features {
   background-color: white;
   padding-top: $spacing-xx-large;
   color: $gray-800;
+
+  // flexbox
+
+  .flex-container {
+    justify-content: space-between;
+  }
+
+  .flex-item {
+    flex-basis: 44%;
+  }
 
   .benefit-wrapper {
     padding: $spacing-medium;
@@ -393,6 +483,10 @@ footer {
   padding: $spacing-medium !important;
   padding-bottom: $spacing-large !important;
 
+  .flex-container {
+    justify-content: space-between;
+  }
+
   .logo-wrapper {
     color: $color-primary;
     font-size: $font-size-large;
@@ -403,6 +497,10 @@ footer {
     text-decoration: none;
     color: $gray-800;
     margin-right: 10px;
+    @media (min-width: $bp-medium) {
+      display: block;
+      margin-bottom: $spacing-medium;
+    }
   }
 
   .headline {
@@ -410,5 +508,9 @@ footer {
     text-transform: uppercase;
     margin-top: 24px;
     margin-bottom: 16px;
+
+    @media (min-width: $bp-medium) {
+      margin-top: 0;
+    }
   }
 }

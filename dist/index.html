@@ -15,17 +15,21 @@
     </header>
 
     <main>
-      <section class="hero container">
-        <p>WAS FÜR EINE FIRMA?</p>
-        <h1>
-          Here ist der MASTER Claim
-        </h1>
-        <p class="sub-heading">
-          Sub-hero message, not too long and not too short. Make it just right!
-        </p>
-        <a href="#form-anchor" class="btn btn-secondary">Subscribe</a>
-
-        <div class="img-wrapper">
+      <section class="hero container flex-container">
+        <div class="flex-item">
+          <p>WAS FÜR EINE FIRMA?</p>
+          <h1>
+            Here ist der MASTER Claim
+          </h1>
+          <p class="sub-heading">
+            Sub-hero message, not too long and not too short. Make it just
+            right!
+          </p>
+          <div class="btn-wrapper">
+            <a href="#form-anchor" class="btn btn-secondary">Subscribe</a>
+          </div>
+        </div>
+        <div class="img-wrapper flex-item">
           <img src="/undraw_browsing_urt9.d3561849.svg" alt="">
         </div>
       </section>
@@ -46,45 +50,47 @@
         </svg>
       </div>
 
-      <section class="form-n-info container">
-        <form action="https://app.99inbound.com/api/e/sKNCVAig" method="POST" class="box-shadow">
-          <h2>Sign Up Today</h2>
-          <p class="sub-heading">
-            Sub-hero message, not too long and not too short. Make it just
-            right!
-          </p>
-          <div class="input-wrapper">
-            <input class="input" id="name-input" type="text" name="name">
-            <label class="label" for="password">Name</label>
-          </div>
-          <div class="input-wrapper">
-            <input class="input" id="email" type="email" name="email">
-            <label class="label" for="email">Email Address</label>
-          </div>
-          <button class="btn btn-primary">
-            Submit
-          </button>
-        </form>
+      <section class="form-n-info">
+        <div class="container flex-container-large">
+          <form action="https://app.99inbound.com/api/e/sKNCVAig" method="POST" class="box-shadow">
+            <h2>Sign Up Today</h2>
+            <p class="sub-heading">
+              Sub-hero message, not too long and not too short. Make it just
+              right!
+            </p>
+            <div class="input-wrapper">
+              <input class="input" id="name-input" type="text" name="name">
+              <label class="label" for="password">Name</label>
+            </div>
+            <div class="input-wrapper">
+              <input class="input" id="email" type="email" name="email">
+              <label class="label" for="email">Email Address</label>
+            </div>
+            <button class="btn btn-primary">
+              Submit
+            </button>
+          </form>
 
-        <div class="details">
-          <h2>This explains more in Detail</h2>
-          <div class="fancy-hr">
-            <div class="bg-primary-gradient"></div>
+          <div class="details">
+            <h2>This explains more in Detail</h2>
+            <div class="fancy-hr">
+              <div class="bg-primary-gradient"></div>
+            </div>
+            <p class="sub-heading">
+              Sub-hero message, not too long and not too short. Make it just
+              right!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+              itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Tempore blanditiis asperiores, id quisquam nulla eum eius a
+              exercitationem nisi eveniet.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+              quisquam velit ab porro modi eligendi!
+            </p>
           </div>
-          <p class="sub-heading">
-            Sub-hero message, not too long and not too short. Make it just
-            right!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-            itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Tempore blanditiis asperiores, id quisquam nulla eum eius a
-            exercitationem nisi eveniet.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
-            quisquam velit ab porro modi eligendi!
-          </p>
         </div>
       </section>
 
@@ -107,22 +113,25 @@
       </svg>
 
       <section class="social-media container">
-        <div class="img-wrapper">
-          <img src="/undraw_female_avatar_w3jk.05080bae.svg" alt="">
-        </div>
+        <div class="flex-container">
+          <div class="img-wrapper flex-item">
+            <img src="/undraw_female_avatar_w3jk.05080bae.svg" alt="">
+          </div>
+          <div class="flex-item">
+            <p class="social-media-quote">
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Incidunt sequi ipsam quod consectetur fuga quam cumque, porro
+              ducimus praesentium eos?"
+            </p>
 
-        <p class="social-media-quote">
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
-          sequi ipsam quod consectetur fuga quam cumque, porro ducimus
-          praesentium eos?"
-        </p>
+            <p class="name">
+              Some Randomname
+            </p>
 
-        <p class="name">
-          Some Randomname
-        </p>
-
-        <div class="fancy-hr">
-          <div></div>
+            <div class="fancy-hr">
+              <div></div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -142,94 +151,107 @@
         </svg>
       </div>
 
-      <section class="benefits container">
-        <h2>Some benefits</h2>
+      <section class="benefits">
+        <div class="container">
+          <h2>Some benefits</h2>
 
-        <div class="fancy-hr">
-          <div class="bg-primary-gradient"></div>
-        </div>
-
-        <div class="benefit-wrapper">
-          <h3>
-            Lorem ipsum dolor sit amet
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
-            ipsum eu nunc commodo posuere et sit amet ligula. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Temporibus atque dolor,
-            numquam accusantium vitae hic perspiciatis at labore nemo ut?
-          </p>
-          <div class="img-wrapper">
-            <img src="/undraw_nature_benefits_mr3v.a24a5d74.svg" alt="">
+          <div class="fancy-hr">
+            <div class="bg-primary-gradient"></div>
           </div>
-        </div>
 
-        <div class="benefit-wrapper">
-          <h3>
-            Lorem ipsum dolor sit amet
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
-            ipsum eu nunc commodo posuere et sit amet ligula. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Temporibus atque dolor,
-            numquam accusantium vitae hic perspiciatis at labore nemo ut?
-          </p>
-          <div class="img-wrapper">
-            <img src="/undraw_personal_file_222m.427c5f92.svg" alt="">
+          <div class="benefit-wrapper flex-container">
+            <div class="flex-item">
+              <h3>
+                Lorem ipsum dolor sit amet
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                at ipsum eu nunc commodo posuere et sit amet ligula. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Temporibus atque
+                dolor, numquam accusantium vitae hic perspiciatis at labore nemo
+                ut?
+              </p>
+            </div>
+            <div class="img-wrapper flex-item">
+              <img src="/undraw_nature_benefits_mr3v.a24a5d74.svg" alt="">
+            </div>
+          </div>
+
+          <div class="benefit-wrapper flex-container flex-reverse">
+            <div class="flex-item">
+              <h3>
+                Lorem ipsum dolor sit amet
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                at ipsum eu nunc commodo posuere et sit amet ligula. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Temporibus atque
+                dolor, numquam accusantium vitae hic perspiciatis at labore nemo
+                ut?
+              </p>
+            </div>
+            <div class="img-wrapper flex-item">
+              <img src="/undraw_personal_file_222m.427c5f92.svg" alt="">
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="features container">
-        <h2>Some Features</h2>
+      <section class="features">
+        <div class="container">
+          <h2>Some Features</h2>
 
-        <div class="fancy-hr">
-          <div class="bg-primary-gradient"></div>
-        </div>
-
-        <div class="feature-card">
-          <div class="icon-wrapper">
-            <i class="las la-anchor la-5x"></i>
+          <div class="fancy-hr">
+            <div class="bg-primary-gradient"></div>
           </div>
 
-          <h3>
-            Lorem ipsum dolor sit amet.
-          </h3>
+          <div class="flex-container">
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <i class="las la-anchor la-5x"></i>
+              </div>
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
+              <h3>
+                Lorem ipsum dolor sit amet.
+              </h3>
 
-        <div class="feature-card">
-          <div class="icon-wrapper">
-            <i class="las la-ambulance la-5x"></i>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <i class="las la-ambulance la-5x"></i>
+              </div>
+
+              <h3>
+                Lorem ipsum dolor sit amet.
+              </h3>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <i class="las la-air-freshener la-5x"></i>
+              </div>
+
+              <h3>
+                Lorem ipsum dolor sit amet.
+              </h3>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
           </div>
-
-          <h3>
-            Lorem ipsum dolor sit amet.
-          </h3>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-
-        <div class="feature-card">
-          <div class="icon-wrapper">
-            <i class="las la-air-freshener la-5x"></i>
+          <div class="btn-wrapper">
+            <a href="" class="btn btn-primary">Subscribe</a>
           </div>
-
-          <h3>
-            Lorem ipsum dolor sit amet.
-          </h3>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
         </div>
-
-        <a href="" class="btn btn-primary">Subscribe</a>
       </section>
 
       <!-- Switch bg -->
@@ -250,30 +272,41 @@
         </g>
       </svg>
     </main>
-    <footer class="container">
-      <a href="" class="logo-wrapper">
-        LANDING
-      </a>
+    <footer>
+      <div class="container">
+        <div class="flex-container">
+          <a href="" class="logo-wrapper flex-item">
+            LANDING
+          </a>
 
-      <p class="headline">
-        Legal
-      </p>
-      <a href="" class="link">Terms</a>
-      <a href="" class="link">Privacy</a>
+          <div class="flex-item">
+            <p class="headline">
+              Legal
+            </p>
+            <a href="" class="link">Terms</a>
+            <a href="" class="link">Privacy</a>
+          </div>
 
-      <p class="headline">
-        Social
-      </p>
-      <i class="lab la-facebook"></i><a href="" class="link">Facebook</a>
-      <i class="lab la-linkedin"></i><a href="" class="link">Linkedin</a>
-      <i class="lab la-twitter"></i><a href="" class="link">Twitter</a>
+          <div class="flex-item">
+            <p class="headline">
+              Social
+            </p>
+            <a href="" class="link">
+              <i class="lab la-facebook"></i> Facebook</a>
+            <a href="" class="link"><i class="lab la-linkedin"></i> Linkedin</a>
+            <a href="" class="link"><i class="lab la-twitter"></i> Twitter</a>
+          </div>
 
-      <p class="headline">
-        Company
-      </p>
-      <a href="" class="link">Offical Blog</a>
-      <a href="" class="link">About Us</a>
-      <a href="" class="link">Contact</a>
+          <div class="flex-item">
+            <p class="headline">
+              Company
+            </p>
+            <a href="" class="link">Offical Blog</a>
+            <a href="" class="link">About Us</a>
+            <a href="" class="link">Contact</a>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="/src.e31bb0bc.js"></script>
   </body>
