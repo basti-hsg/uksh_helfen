@@ -228,6 +228,8 @@ section.hero-headline {
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 18px;
+    line-height: 24px;
   }
   p:nth-child(3) {
     font-size: 20px;
@@ -289,14 +291,6 @@ section.cards {
         height: auto;
         transition: all 340ms ease-in-out;
         background: transparent;
-
-        @media (min-width: $bp-medium) {
-          &:hover {
-            transform: scale(1.02);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2),
-              0 10px 10px -5px rgba(0, 0, 0, 0.04);
-          }
-        }
       }
     }
   }
@@ -444,7 +438,7 @@ section.cards {
         border-radius: 40px;
       }
       .info-text-bottom {
-        bottom: -16%;
+        bottom: -18%;
         left: 24px;
         font-size: 18px;
         line-height: 24px;
