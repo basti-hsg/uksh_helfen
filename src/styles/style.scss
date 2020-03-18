@@ -1,6 +1,8 @@
 // colors
 $gray-800: #2d3748;
+$gray-600: #718096;
 $gray-400: #cbd5e0;
+
 $color-primary: #5a67d8;
 
 // fosis
@@ -9,6 +11,8 @@ $font-size-x-large: 30px;
 
 // spacings
 
+$spacing-xx-large: 84px;
+$spacing-x-large: 64px;
 $spacing-large: 48px;
 $spacing-medium: 20px;
 
@@ -32,6 +36,12 @@ h2 {
   margin-bottom: $spacing-medium;
 }
 
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
 .sub-heading {
   font-size: $font-size-large;
   line-height: 36px;
@@ -41,6 +51,7 @@ h2 {
 p {
   margin-bottom: $spacing-medium;
   font-size: 16px;
+  line-height: 24px;
 }
 
 // HR
@@ -69,6 +80,7 @@ div.fancy-hr {
 .btn {
   text-decoration: none;
   padding: 18px 34px;
+  width: fit-content;
   font-size: 16px;
   border-radius: 9999px;
   font-weight: bold;
@@ -166,18 +178,15 @@ HERO SECTION
 */
 
 section.hero {
-  padding-top: 76px;
+  padding-top: $spacing-xx-large;
   text-align: center;
   color: white;
-  p:first-child {
-    margin-bottom: 30px;
-    text-transform: uppercase;
-  }
+
   h1 {
-    margin-bottom: 10px;
+    margin-bottom: $spacing-medium;
   }
   p:nth-child(3) {
-    margin-bottom: 58px;
+    margin-bottom: 48px;
   }
   .btn {
     margin-bottom: 30px;
@@ -204,12 +213,12 @@ SWITCH BG
 }
 
 /*
-FORM N INFO
+MAIN SECTIONS
 */
 section.form-n-info {
   background-color: white;
   color: $gray-800;
-  padding-top: 84px;
+  padding-top: $spacing-xx-large;
   form {
     padding: 32px;
     margin-bottom: 50px;
@@ -252,6 +261,11 @@ section.form-n-info {
       font-size: 16px;
       color: $gray-400;
     }
+
+    .btn {
+      margin-top: $spacing-medium;
+      margin-bottom: $spacing-medium;
+    }
   }
 
   div.details {
@@ -280,6 +294,7 @@ section.social-media {
 
   p.social-media-quote {
     font-size: $font-size-x-large;
+    line-height: 45px;
   }
   p.name {
     font-size: 20px;
@@ -294,5 +309,106 @@ section.social-media {
       background-color: white;
       max-width: 100px;
     }
+  }
+}
+
+section.benefits,
+section.features {
+  background-color: white;
+  padding-top: $spacing-xx-large;
+  color: $gray-800;
+
+  .benefit-wrapper {
+    padding: $spacing-medium;
+  }
+
+  h2 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  div.fancy-hr {
+    margin-bottom: $spacing-medium;
+  }
+
+  h3 {
+    margin-bottom: $spacing-medium;
+  }
+
+  p {
+    color: $gray-600;
+    margin-bottom: $spacing-x-large;
+  }
+
+  .img-wrapper {
+    padding-top: $spacing-medium;
+    padding-bottom: $spacing-large;
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  // feature stuff
+
+  .feature-card {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    text-align: center;
+    padding: $spacing-medium;
+    margin: $spacing-medium;
+
+    div.icon-wrapper {
+      i {
+        color: $color-primary;
+      }
+      margin-bottom: $spacing-medium;
+    }
+    h3 {
+      font-size: $font-size-large;
+      margin-bottom: 8px;
+    }
+    p {
+      color: $gray-800;
+    }
+  }
+
+  .btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: $spacing-medium;
+    margin-bottom: $spacing-large;
+  }
+}
+section.features {
+  display: grid;
+}
+
+/*
+FOOTER
+*/
+
+footer {
+  background-color: white;
+  padding: $spacing-medium !important;
+  padding-bottom: $spacing-large !important;
+
+  .logo-wrapper {
+    color: $color-primary;
+    font-size: $font-size-large;
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+    color: $gray-800;
+    margin-right: 10px;
+  }
+
+  .headline {
+    color: $gray-600;
+    text-transform: uppercase;
+    margin-top: 24px;
+    margin-bottom: 16px;
   }
 }
