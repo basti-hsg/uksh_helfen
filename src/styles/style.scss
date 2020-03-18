@@ -482,6 +482,7 @@ section.info-text {
     .img-wrapper {
       flex-basis: 33%;
       margin-top: 0;
+      max-width: unset;
     }
   }
 }
